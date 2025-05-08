@@ -8,15 +8,16 @@ Here we are going to develop a repository of genome-scale metabolic models (GEMs
 
 Also, ideally we are going to try to:
 * Implement visually for users that are not familiar with programming, GitHub and/or FBA through one of the following:
-	> Graphic network fluxes visualization similar to ESCHER-FBA: <https://sbrg.github.io/escher-fba/#/> 
-	> Web-based or desktop app to implement FBA
+	*Graphic network fluxes visualization similar to ESCHER-FBA: <https://sbrg.github.io/escher-fba/#/>   
+  
+	*Web-based or desktop app to implement FBA
 * Compare experimentally the model(s) when a gene knock-out has occurred, which ultimately means doing gene knock-outs in the lab.
 
 
 *Important definitions and concepts:
-FBA
-COBRA
-Metabolic Flux
-GEMs
-Gene knock out
-Repository
+FBA  
+COBRA  
+Metabolic Flux  
+GEMs  
+Gene knock out  
+Repository  
