@@ -2,12 +2,12 @@
 preparation:
   models:
       - Models/iYO844.xml
-      - Models/iBB1018.xml
-      - Models/iBsu1147R.xml
+      # - Models/iBB1018.xml
+      # - Models/iBsu1147R.xml
   verbose: true   
 
   translation:
-    run: false                 
+    run: true                 
     translation_db: "bigg"     
     output_dir: "outputs/preparation/translated_models"
     output_name: null         
@@ -38,8 +38,8 @@ comparison:
 
   models:
        - Models/iYO844.xml
-       - Models/iBB1018.xml
-       - Models/iBsu1147R.xml
+      #  - Models/iBB1018.xml
+      #  - Models/iBsu1147R.xml
   verbose: true
   force: true
 
@@ -82,7 +82,7 @@ comparison:
     force: true
 
   biolog:
-    run: false
+    run: true
     carbon_file: "Pipeline/2_Comparison/CarbonUtilization.xlsx"
     output_path: "Pipeline/2_Comparison/Carbon_Utilization_Results.xlsx"
     uptake: 7.5

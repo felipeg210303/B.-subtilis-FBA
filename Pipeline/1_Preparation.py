@@ -21,7 +21,7 @@ import yaml
 import os
 import sys
 from pathlib import Path
-
+import time 
 
 
 
@@ -89,6 +89,7 @@ def run_subscript(script_path, args, verbose=True):
 
 
 def main():
+    time_start = time.time()
     """Main function with command-line interface."""
     parser = argparse.ArgumentParser(
         description="GEM models preparation pipeline - translation, validation, quality control, and media setup",
@@ -276,9 +277,12 @@ Examples:
     print(f"  - Steps skipped: {skipped_steps}")
     print(f"Results directory: {base_outdir}")
     print("="*60)
-    
+    time_end = time.time()
+    print(f"Total execution time: {time_end - time_start:.2f} seconds")
     sys.exit(exit_code)
 
 
 if __name__ == "__main__":
+    
     main()
+   
